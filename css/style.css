@@ -1,0 +1,379 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	text-decoration: none;
+}
+
+body {
+	background-color: var(--color-hueso);
+	background-size: cover;
+	cursor: default;
+}
+
+*::selection{
+	background: var(--color-marron);
+	color: var(--color-negro);
+}
+
+:root{
+
+	--color-negro: #1b1b1b;
+	--color-marron: #d2ac7f;
+	--color-beig: #ffefdd;
+	--color-hueso: #efefef;
+	--color-gris: #777;
+	--color-text: #54595f; 
+	--color-amarillo: #F5C14F;
+}
+h1{font-size: 18px} p{font-size: 15px;}
+/*HEADER*/
+header{
+	padding: 10px 120px 0 120px;
+	width: 100%;
+	height: 85px;
+	background-color: var(--color-negro);
+}
+
+#logo{
+	width: 110px;
+	height: auto;
+}
+#topnav__label{
+	display: none;
+}
+#topnav__burguer{
+	display: none;
+}
+.topnav__menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	color: #fff;
+
+}
+.menu__link{
+	margin: 0 10px;
+}
+
+.topnav__menu a{
+
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+
+.topnav__menu a:hover{
+	cursor: pointer;
+	color: var(--color-marron);
+	border-bottom: 3px solid  var(--color-marron);
+}
+
+/*MAIN*/
+main{
+
+	padding: 40px 120px 40px 120px;
+	background-color: #000;
+	color: #fff;
+}
+.logo__main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.logo__main img{
+	width: 300px;
+}
+.titulo{
+
+	text-align: center;
+	letter-spacing: 4px;
+	margin-bottom: 10px;
+
+}
+.sobre__nosotros {
+	text-align: center;
+	width: 600px;
+}
+/*BOTON RESERVA*/
+.shadow__btn {
+	margin-top: 30px;
+	padding: 10px 20px;
+	border: none;
+	font-size: 17px;
+	border-radius: 7px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.5s;
+	transition-property: box-shadow;
+}
+
+.shadow__btn {
+	background: var(--color-amarillo);
+	box-shadow: 0 0 25px var(--color-amarillo);
+}
+
+.shadow__btn:hover {
+	box-shadow: 0 0 5px var(--color-amarillo),
+	0 0 25px var(--color-amarillo),
+	0 0 50px var(--color-amarillo),
+	0 0 100px var(--color-amarillo);
+}
+.icon__barber{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0;
+}
+.sub__h2{
+	font-size: 20px;
+	text-align: center;
+	margin: 10px 0;
+	padding: 5px 1px;
+	border-radius: 2px;
+	border-bottom: 3px solid  var(--color-marron);
+}
+
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px 0;
+}
+.cajas__conteiner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.cajas__servicios{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	width: 300px;
+	height: 180PX;
+	margin: 0 5px;
+	padding: 5px;
+	border-radius: 20px;
+}
+/*GALERIA DE FOTOS*/
+.layout {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	column-gap: 20px;
+}
+.layout img{
+	object-fit: cover;
+	margin: 10px 0;
+	border-radius: 5px;
+	width: 300px;
+	height: 400px;
+	opacity: 0.8;
+}  
+
+/*UBICACION*/
+
+.marcas__conteiner{
+	display: flex;
+	flex-wrap: wrap;
+}
+.marcas__conteiner .marcas{
+	margin: 15px 5px;
+	width: 57px;
+	height: 20px;
+
+}
+
+/*MAPA/DIRECCION*/
+.mapouter{position:relative;text-align:right;width:1000px;height:400px;}
+.gmap_canvas {overflow:hidden;background:none!important;width:1000px;height:400px;}
+.gmap_iframe {width:1000px!important;height:400px!important;}
+
+/*FOOTER*/
+footer{
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--color-negro);
+	width: 100%;
+	height: auto;
+	color: #fff;
+}
+footer img{
+	width: 120px;
+}
+.icon__footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon__footer a{
+	text-decoration: none;
+	color: var(--color-marron);
+	font-size: 19px;
+	padding: 10px 8px;
+}
+.icon__footer a:hover{
+	transition: 0.5s;
+	color: var(--color-beig);
+}
+#copy a{
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	color: var(--color-marron);
+	padding: 0 0 10px 0;
+	opacity: 0.8;
+}
+
+/*dispositivos*/
+@media screen and (min-width:320px) AND (max-width:1023px){
+
+	/*HEADER*/
+
+	header{
+		padding: 10px 40px 0 50px;
+		height: 90px;
+	}
+	#logo{
+		width: 90px;
+		height: auto;
+	}
+	/*MAIN*/
+	main{
+
+		padding: 20px;
+		background-color: #000;
+		color: #fff;
+	}
+
+	.cajas__servicios{
+		width: 300px;
+		height: 110PX;
+	}
+	/*GALERIA DE FOTOS*/
+	.layout {
+		display: grid;
+		grid-template-columns: auto auto ;
+		grid-template-rows: auto auto ;
+		column-gap: 20px;
+	}
+	/*MAPA/DIRECCION*/
+	.mapouter{width:660px;}
+	.gmap_canvas {width:660px;}
+	.gmap_iframe {width:660px!important;}
+
+
+}
+
+
+
+@media screen and (min-width:320px) AND (max-width:767px){
+	h1{font-size: 18px;} h2{font-size: 18px} h3{font-size: 16px;} p{font-size: 14px;}
+	/*HEADER*/
+
+	.logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	#logo{
+		width: 70px;
+		height: auto;
+	}
+	#topnav__label{
+		display: flex;
+		justify-content: flex-end;
+		color: #fff;
+	}
+	.topnav__menu{
+		display: none;
+	}
+	#topnav__burguer:checked + .topnav__menu{
+		display: flex;
+		
+	}
+	
+	.topnav__menu a{
+		font-size: 15px;
+	}
+	/*MAIN*/
+	.shadow__btn {
+		padding: 10px;
+		font-size: 16px;
+	}
+	.cajas__conteiner{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.sobre__nosotros {
+		text-align: center;
+		width: 270px;
+	}
+	.sub__h2{
+		letter-spacing: 1px;
+		font-size: 18px;
+
+	}
+	.layout {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.layout img{
+		margin: 5px 0;
+		border-radius: 5px;
+		width: 285px;
+	}
+
+		/*MAPA/DIRECCION*/
+	.mapouter{width:290px;}
+	.gmap_canvas {width:290px;}
+	.gmap_iframe {width:290px!important;}
+}
+
+
+@media screen and (min-width:320px) and (max-width:374px){
+	h1{font-size: 18px;} h2{font-size: 16px} h3{font-size: 14px;} p{font-size: 12px;}
+	
+	/*HEADER*/
+	header{
+		height: 90px;
+	}
+	.topnav__menu a{
+		font-size: 14px;
+	}
+	/*MAIN*/
+	.logo__main{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	.logo__main img{
+		width: 200px;
+	}
+	.sobre__nosotros {
+		text-align: center;
+		width: 270px;
+	}
+
+	.sub__h2{
+		font-size: 16px;
+	}
+}
